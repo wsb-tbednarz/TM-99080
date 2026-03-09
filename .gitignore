@@ -1,0 +1,5 @@
+**/logs
+*.log
+venv/
+node_modules/
+Thumbs.db
