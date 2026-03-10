@@ -1,0 +1,4 @@
+PROJEKT SELEKTORA:
+ID: toggle_use_logo
+TAG: Button
+STATUS: ZALICZONE
