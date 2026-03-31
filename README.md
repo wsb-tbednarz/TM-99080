@@ -23,16 +23,16 @@ Ten projekt to kompletny ekosystem testowy oparty na podejsciu **Cloud-Ready / H
 ### 🔹 BLOK 1: Tooling & Environment (Infrastruktura)
 Przygotowanie bazy narzędziowej w modelu kontenerowym.
 * **Co zrobiono:** Pobranie i konfiguracja obrazów `appium`, `android-sdk` oraz `mobsf`.
-* **Wniosek:** [OPISZ SAM - dlaczego używamy obrazów Docker zamiast instalować wszystko lokalnie?]
+* **Wniosek:** Zastosowanie kontenerów Docker umożliwia szybkie i powtarzalne przygotowanie środowiska testowego bez konfliktów zależności. Dzięki temu unikamy problemów związanych z konfiguracją lokalną, a cały stack (Appium, Android SDK, MobSF) działa identycznie na każdym stanowisku, co zwiększa stabilność i przenośność projektu.
 
 ### 🔹 BLOK 2: Debugowanie i Analiza Statyczna (MobSF)
 Zrozumienie "wnętrza" aplikacji mobilnej przed przystąpieniem do testów.
 * **Co zrobiono:** Wykorzystanie MobSF do skanowania plików APK pod kątem podatności i uprawnień.
-* **Wniosek:** [OPISZ SAM - co daje testerowi analiza statyczna kodu APK?]
+* **Wniosek:** Analiza statyczna APK pozwala zidentyfikować potencjalne podatności, nadmiarowe uprawnienia oraz niebezpieczne fragmenty kodu jeszcze przed uruchomieniem aplikacji. Dzięki temu tester może szybciej zrozumieć strukturę aplikacji i skupić się na najbardziej ryzykownych obszarach podczas testów dynamicznych.
 
 ### 🔹 BLOK 3-4: Fundamenty Skryptowania (Python for QA)
 Budowa logiki testowej w języku Python.
-* **Co zrobiono:** [OPISZ SAM - o jakich strukturach danych i funkcjach się uczyłeś?]
+* **Co zrobiono:** Nauka podstawowych struktur danych w Pythonie, takich jak listy, słowniki i krotki, oraz definiowania funkcji i obsługi warunków (if/else). Wykorzystanie pętli (for, while) do iteracji oraz modularnego podejścia do kodu poprzez tworzenie reużywalnych funkcji wspierających logikę testów.
 
 ### 🔹 BLOK 5-7: Hybrydowe Testowanie API (Requests & Pytest)
 Weryfikacja warstwy backendowej aplikacji mobilnej.
@@ -41,7 +41,7 @@ Weryfikacja warstwy backendowej aplikacji mobilnej.
 
 ### 🔹 BLOK 8: Appium UI Automation (Deep Dive)
 Automatyzacja interakcji z interfejsem użytkownika.
-* **Co zrobiono:** [OPISZ SAM - jakich selektorów używałeś (ID, XPath)? Jakie akcje symulowałeś na urządzeniu?]
+* **Co zrobiono:** Wykorzystanie selektorów takich jak resource-id, accessibility id oraz XPath do lokalizowania elementów interfejsu. Symulowanie akcji użytkownika, takich jak kliknięcia, wprowadzanie tekstu, scrollowanie oraz nawigacja między ekranami. Implementacja prostych scenariuszy testowych odwzorowujących realne użycie aplikacji.
 
 ### 🔹 BLOK 9: Konteneryzacja Serwera (Docker Compose)
 Izolacja silnika Appium od systemu operacyjnego.
@@ -63,8 +63,7 @@ Projekt wykorzystuje zaawansowane raportowanie Allure, które pozwala na:
 * Analizę błędów wraz z załącznikami (zrzuty ekranu, logi JSON).
 * Dokumentowanie środowiska wykonawczego w sekcji **Environment**.
 
-[TUTAJ WRZUĆ SCREENA SWOJEGO DASHBOARDU ALLURE]
-
+![alt text](image.png)
 ---
 
 ## 🚀 Jak uruchomić cały proces?
